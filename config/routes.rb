@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
 
-  mount GrapeApi::Posts => '/'
+  mount SenseingDataAPI => '/'
 end
