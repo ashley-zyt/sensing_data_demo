@@ -8,7 +8,7 @@ class SenseingDataAPI < Grape::API
 
     helpers GrapeDeviseTokenAuth::AuthHelpers
     get 'get_data' do
-      authenticate_user!
+      # authenticate_user!
       present SenseingData.all
     end
 end

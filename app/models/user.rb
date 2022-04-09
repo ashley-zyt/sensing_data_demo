@@ -4,12 +4,7 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
   # before_validation :uid_populate, on: :create
 
-  def confirmed_at
-    true
-  end
 
-  def uid_populate
-    self.uid = SecureRandom.uuid
-  end
+  
 end
 
