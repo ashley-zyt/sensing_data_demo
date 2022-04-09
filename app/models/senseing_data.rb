@@ -1,2 +1,2 @@
-class senseingData < ActiveRecord::Base
+class SenseingData < ActiveRecord::Base
 end
