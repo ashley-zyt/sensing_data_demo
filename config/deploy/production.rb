@@ -86,7 +86,7 @@ set :server_name, "47.104.166.186"
 # at filepaths
 set :full_app_name, "sensing_data_demo"
 
-server '47.104.166.186', user: 'deploy', roles: %w{web app db}, primary: true
+server '47.104.166.186', user: 'root', roles: %w{web app db}, primary: true
 
 set :deploy_to, "~/project/sensing_data_demo"
 

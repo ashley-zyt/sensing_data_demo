@@ -8,12 +8,12 @@ set :application, "sensing_data_demo"
 set :repo_url, "git@github.com:ashley-zyt/sensing_data_demo.git"
 set :branch, "master"
 # 需要部署到服务器的位置
-set :deploy_to, "~/project/sensing_data_demo"
+set :deploy_to, "/project/sensing_data_demo"
 
 append :linked_files, "config/database.yml", "config/master.key"
 
 # 去掉注释
-append :linked_dirs, 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'public/system'
+append :linked_dirs, 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'public/system'\
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
@@ -46,4 +46,4 @@ append :linked_dirs, 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'public/syst
 # set :keep_releases, 5
 
 # Uncomment the following to require manually verifying the host key before first deploy.
-# set :ssh_options, verify_host_key: :secure
+set :ssh_options, verify_host_key: :secure
