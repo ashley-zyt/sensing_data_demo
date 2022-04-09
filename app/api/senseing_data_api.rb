@@ -11,6 +11,6 @@ class SenseingDataAPI < Grape::API
       # authenticate_user!
       # page = params[:page].to_i || 1
       # per = params[:per].to_i || 20
-      present SenseingData.all.to_json
+      present SenseingData.all
     end
 end
