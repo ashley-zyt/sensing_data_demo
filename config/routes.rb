@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
-
-  mount SenseingDataAPI => '/'
+  mount ApplicationAPI => '/api'
+  mount GrapeSwaggerRails::Engine => '/apidoc'
 end
