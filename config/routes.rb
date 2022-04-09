@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
 
-  mount GrapeApi::Posts => '/'
+  mount SenseingData => '/'
   mount GrapeSwaggerRails::Engine => '/apidoc'
 end
