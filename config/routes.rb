@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
-  mount ApplicationAPI => '/api'
+
+  mount GrapeApi::Posts => '/'
   mount GrapeSwaggerRails::Engine => '/apidoc'
 end
