@@ -6,6 +6,8 @@ class SenseingDataAPI < Grape::API
     helpers GrapeDeviseTokenAuth::AuthHelpers
     get 'get_data' do
       # authenticate_user!
-      present SenseingData.page(params[:page]).per(20)
+      page = params[:page].to_i || 1
+      per = params[:per].to_i || 20
+      present SenseingData.page(page).per(per)
     end
 end
