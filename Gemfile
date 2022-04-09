@@ -41,6 +41,13 @@ gem 'capistrano-rails', '~> 1.1'
 gem 'capistrano-rvm'
 gem 'capistrano-bundler', require: false
 
+gem 'devise'
+gem 'grape'
+gem 'devise_token_auth'
+gem 'grape_devise_token_auth'
+gem 'grape-swagger'
+gem 'grape-swagger-rails'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]

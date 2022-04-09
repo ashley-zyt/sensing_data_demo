@@ -12,7 +12,6 @@ set :deploy_to, "/project/sensing_data_demo"
 
 append :linked_files, "config/database.yml", "config/master.key"
 
-# 去掉注释
 append :linked_dirs, 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'public/system'\
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
