@@ -38,8 +38,8 @@ gem 'bootsnap', '>= 1.1.0', require: false
 
 
 gem 'capistrano-rails'
-gem 'capistrano-passenger'
-gem 'capistrano-rbenv'
+# gem 'capistrano-passenger'
+# gem 'capistrano-rbenv'
 
 
 

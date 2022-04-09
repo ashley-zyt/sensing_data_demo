@@ -1,21 +1,19 @@
 # config valid for current version and patch releases of Capistrano
 `ssh-add`
 
-# lock "~> 3.17.0"
 
 set :application, "sensing_data_demo"
 
 # git仓库地址
 set :repo_url, "git@github.com:ashley-zyt/sensing_data_demo.git"
-
+set :branch, "master"
 # 需要部署到服务器的位置
-set :deploy_to, "/project/sensing_data_demo"
+set :deploy_to, "~/project/sensing_data_demo"
 
 append :linked_files, "config/database.yml", "config/master.key"
 
+# 去掉注释
 append :linked_dirs, 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'public/system'
-
-
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
