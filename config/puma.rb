@@ -31,9 +31,9 @@ rails_env = ENV.fetch("RAILS_ENV") || "development"
 
 #	计算机核数
 if rails_env == "development"
-  workers ENV.fetch("WEB_CONCURRENCY") { 2 }
+  workers ENV.fetch("WEB_CONCURRENCY") { 10 }
 else
-  workers 4
+  workers 10
 end
 
 # Use the `preload_app!` method when specifying a `workers` number.
@@ -48,7 +48,7 @@ state_path "#{Rails.root}/tmp/pids/puma.state"
 stdout_redirect "#{Rails.root}/log/puma.stdout.log", "#{Rails.root}/log/puma.stderr.log", true
 bind "unix://#{Rails.root}/tmp/sensing_data_demo.sock"
 daemonize
-threads 0,4
+threads 10,11
 preload_app!
 
 # If you are preloading your application and using Active Record, it's
