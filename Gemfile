@@ -42,9 +42,10 @@ gem 'capistrano-rvm'
 gem 'capistrano-bundler', require: false
 
 gem 'devise'
-gem 'grape'
+# gem 'grape'
 gem 'devise_token_auth'
 gem 'grape_devise_token_auth'
+# gem 'swagger-docs'
 gem 'grape-swagger'
 gem 'grape-swagger-rails'
 
